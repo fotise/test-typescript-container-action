@@ -9,4 +9,4 @@ import { getInput } from "@actions/core";
 
 const name = getInput("name", { required: true });
 
-console.log(`Hello, ${name}!`);
+console.log(`Hello :), ${name}!`);
