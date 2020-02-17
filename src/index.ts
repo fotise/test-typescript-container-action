@@ -6,13 +6,13 @@
  */
 
 import { getInput } from "@actions/core";
-import { github } from "@actions/github";
+import { GitHub } from "@actions/github";
 
 const name = getInput("name", { required: true });
 
 console.log(`Hello :), ${name}!`);
 
 // Get the JSON webhook payload for the event that triggered the workflow
-const payload = JSON.stringify(github.context.payload, undefined, 2)
+const payload = JSON.stringify(GitHub.context.payload, undefined, 2);
 
 console.log(`The event payload: ${payload}`);
