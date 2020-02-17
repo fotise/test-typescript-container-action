@@ -6,7 +6,7 @@
  */
 
 import { getInput } from "@actions/core";
-const github = require('@actions/github');
+import { github } from "@actions/github";
 
 const name = getInput("name", { required: true });
 
