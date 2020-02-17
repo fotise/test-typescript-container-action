@@ -10,6 +10,6 @@ jobs:
         name: [World, Octocat]
 
     steps:
-      - uses: kevinpollet/typescript-container-action-template@master
+      - uses: fotise/test-typescript-container-action@master
         with:
           name: ${{matrix.name}}
