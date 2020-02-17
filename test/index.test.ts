@@ -16,7 +16,7 @@ describe("index", (): void => {
     return import("../src/index").then(() => {
       expect(consoleLogSpy.mock.calls.length).toBe(1);
       expect(consoleLogSpy.mock.calls[0][0]).toBe(
-        `Hello, ${process.env.INPUT_NAME}!`
+        `Hello :), ${process.env.INPUT_NAME}!`
       );
     });
   });
