@@ -6,8 +6,13 @@
  */
 
 import * as core from "@actions/core";
+import * as github from "@actions/github";
 
 const name = core.getInput("name", { required: true });
 const time = new Date().toTimeString();
 core.setOutput("time", time);
+const payload = JSON.stringify(github.context.payload, undefined, 2);
+console.log(`The event payload: ${payload}`);
+// core.error("This is an error");
+core.setFailed("This is a failure");
 console.log(`Hello2 :), ${name}!`);
