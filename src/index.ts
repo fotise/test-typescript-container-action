@@ -5,8 +5,9 @@
  * found in the LICENSE.md file.
  */
 
-import { getInput } from "@actions/core";
+import * as core from "@actions/core";
 
-const name = getInput("name", { required: true });
-
+const name = core.getInput("name", { required: true });
+const time = new Date().toTimeString();
+core.setOutput("time", time);
 console.log(`Hello2 :), ${name}!`);
