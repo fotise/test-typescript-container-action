@@ -5,9 +5,12 @@ branding:
   icon: book-open
   color: blue
 inputs:
-  name:
+  github-token:
+    description: "GitHub Token"
     required: true
-    description: Name to greet
+  message:
+    description: "Message displayed in pr comment"
+    required: true
 runs:
   using: docker
   image: Dockerfile
