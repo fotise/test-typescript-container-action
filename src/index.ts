@@ -30,7 +30,7 @@ const main = async () => {
   const pull_request_number = context.payload.pull_request.number;
 
   const octokit = new github.GitHub(token);
-  const new_comment = octokit.issues.createComment({
+  octokit.issues.createComment({
     ...context.repo,
     issue_number: pull_request_number,
     body: message,
