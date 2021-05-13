@@ -12,5 +12,5 @@ assignees: ''
 ### I Want to
 
 ### Acceptance Criteria
-[] user must be logged
-[] a logout button must be present
+- [ ] user must be logged
+- [ ] a logout button must be present
