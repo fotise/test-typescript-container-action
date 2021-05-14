@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-### <<As>>
+### >>As<<
 
-### <<I Want to>>
+### >>I Want to<<
 
-### <<Acceptance Criteria>>
+### >>Acceptance Criteria<<
 - [ ] user must be logged
 - [ ] a logout button must be present
